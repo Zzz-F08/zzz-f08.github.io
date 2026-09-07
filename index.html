@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>张帆 Fan Zhang · 个人主页</title>
+  <meta name="description" content="张帆（Fan Zhang），北京邮电大学控制科学与工程硕士，研究方向为时间序列预测、大语言模型与燃料电池健康管理；PHM 2026 最佳论文奖第一作者。" />
+  <meta name="author" content="张帆 Fan Zhang" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231d4ed8'/%3E%3Cstop offset='1' stop-color='%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='white' font-family='Microsoft YaHei,PingFang SC,sans-serif' font-weight='700'%3E%E5%BC%A0%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="nav" id="topNav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark">张</span>
+      <span class="brand-text">张帆 <em>Fan Zhang</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">关于</a>
+      <a href="#education">教育</a>
+      <a href="#research">研究</a>
+      <a href="#publications">论文</a>
+      <a href="#projects">项目</a>
+      <a href="#experience">实习</a>
+      <a href="#honors">荣誉</a>
+      <a href="#skills">技能</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="切换深浅色模式" title="切换深浅色">
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66L19 4.94M4.94 19l1.34-1.34m0-11.32L4.94 4.94M19 19.06l-1.34-1.34M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+      </button>
+      <button class="nav-burger" id="navBurger" aria-label="打开菜单"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 首屏 Hero ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-photo reveal">
+      <div class="photo-ring">
+        <img src="assets/images/portrait.jpg" alt="张帆证件照" />
+      </div>
+      <div class="hero-badges">
+        <span class="chip chip-primary">中共党员</span>
+        <span class="chip">2027 届硕士</span>
+        <span class="chip chip-gold">PHM 最佳论文奖</span>
+      </div>
+    </div>
+    <div class="hero-text reveal">
+      <p class="hero-hello">你好，我是</p>
+      <h1 class="hero-name">张帆 <span class="hero-name-en">Fan Zhang</span></h1>
+      <p class="hero-role">北京邮电大学 · 控制科学与工程 硕士研究生</p>
+      <p class="hero-field">研究方向：时间序列预测 · 大语言模型工程应用 · 燃料电池健康状态评估与寿命预测</p>
+      <blockquote class="hero-motto">
+        <p>「 行远自迩，笃行不怠 」</p>
+        <cite>Grounded in research, built for the real world.</cite>
+      </blockquote>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://github.com/Zzz-F08" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="17" height="17"><path fill="currentColor" d="M12 .5A11.5 11.5 0 00.5 12a11.5 11.5 0 007.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0023.5 12 11.5 11.5 0 0012 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="mailto:fan01118@163.com">
+          <svg viewBox="0 0 24 24" width="17" height="17"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 6h18v12H3z"/><path fill="none" stroke="currentColor" stroke-width="2" d="M3 7l9 6 9-6"/></svg>
+          联系邮箱
+        </a>
+        <a class="btn btn-ghost" href="assets/files/ZhangFan_Resume.pdf" target="_blank" rel="noopener" download>
+          <svg viewBox="0 0 24 24" width="17" height="17"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+          下载简历 PDF
+        </a>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="向下滚动"><span></span></a>
+</section>
+
+<main class="container">
+
+  <!-- ============ 关于我 ============ -->
+  <section class="section" id="about">
+    <div class="sec-head reveal">
+      <h2><span class="sec-num">01</span>关于我 <em>About Me</em></h2>
+    </div>
+    <div class="about-grid">
+      <figure class="about-photo reveal">
+        <img src="assets/images/life.jpg" alt="张帆生活照（联合国万国宫）" loading="lazy" />
+        <figcaption>于瑞士日内瓦 · 联合国万国宫</figcaption>
+      </figure>
+      <div class="about-text reveal">
+        <p>我是<strong>张帆</strong>，2001 年 11 月出生，中共党员，现为<strong>北京邮电大学智能与自动化学院控制科学与工程专业</strong>硕士研究生（2024.09–2027.06），本科毕业于北京科技大学自动化专业。</p>
+        <p>科研上，我兼具自动化与人工智能理论基础，研究覆盖<strong>机器学习、时间序列预测与大语言模型应用</strong>：以<strong>唯一第一作者</strong>完成燃料电池退化预测论文，发表于 PHM 2026 国际会议（EI 收录）并荣获<strong>大会最佳论文奖</strong>；以学生第二作者在 <strong>IEEE TCPMT</strong> 期刊发表连接器可靠性方向论文（SCI/EI，中科院三区）。</p>
+        <p>工程上，我重视技术的真实落地价值，曾在<strong>好未来集团大模型项目部</strong>担任算法实习生，主导 K12 英语智能批改端到端 Pipeline，优化后的 Prompt 策略<strong>全量上线公司核心学习机产品</strong>，完成了从「做研究」到「做产品」的跨越。</p>
+        <p>历任校团委志愿服务中心主席、研究生党支部副书记，做事踏实稳重、执行力强；生活中热爱羽毛球与游泳。</p>
+        <div class="stat-row">
+          <div class="stat"><b data-count="2">0</b><span>学术论文</span></div>
+          <div class="stat"><b data-count="1">0</b><span>最佳论文奖</span></div>
+          <div class="stat"><b data-count="1">0</b><span>上线 AI 产品</span></div>
+          <div class="stat"><b data-count="7000" data-suffix="+">0</b><span>志愿工时</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 教育背景 ============ -->
+  <section class="section" id="education">
+    <div class="sec-head reveal">
+      <h2><span class="sec-num">02</span>教育背景 <em>Education</em></h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>北京邮电大学 <span>· 工学硕士</span></h3>
+            <time>2024.09 – 2027.06（预计）</time>
+          </div>
+          <p class="tl-sub">智能与自动化学院 · 控制科学与工程</p>
+          <div class="course-grid">
+            <div class="course"><span>现代控制理论</span><b>99</b></div>
+            <div class="course"><span>自主智能系统</span><b>94</b></div>
+            <div class="course"><span>强化学习与控制</span><b>92</b></div>
+            <div class="course"><span>模式识别与机器学习</span><b>85</b></div>
+          </div>
+          <p class="tl-note">硕士学位论文：<strong>质子交换膜燃料电池长期健康状态评估与 SEH-Time-LLM 寿命预测</strong>（详见<a href="#research">「研究」板块</a>）。</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>北京科技大学 <span>· 工学学士</span></h3>
+            <time>2020.09 – 2024.06</time>
+          </div>
+          <p class="tl-sub">自动化学院 · 自动化专业</p>
+          <p class="tl-note">本科毕业设计：<strong>语音识别技术在工业人机界面（HMI）系统中的应用与开发</strong>——打通「语音输入 → 识别 → REST 接口转发 → 变量写入 → WinCC 界面联动」完整工业人机交互链路（详见<a href="#projects">「项目」板块</a>）。</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-top">
+            <h3>北京市第八中学 <span>· 高中</span></h3>
+            <time>2017.09 – 2020.07</time>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 研究 / 硕士毕设专题 ============ -->
+  <section class="section" id="research">
+    <div class="sec-head reveal">
+      <h2><span class="sec-num">03</span>硕士研究专题 <em>Master's Research</em></h2>
+      <p class="sec-sub">这一部分是我学位论文工作的完整展开，比纸面简历更系统地呈现研究链路与结果。</p>
+    </div>
+
+    <div class="research-hero reveal">
+      <h3>质子交换膜燃料电池（PEMFC）长期健康状态评估与寿命预测</h3>
+      <p class="zh">PEMFC 通过氢氧电化学反应将化学能直接转化为电能，具备能量转换效率高（40%–60%）、工作温度低（60–80°C）、启动快、零碳排放等优势，是新能源汽车与分布式发电的核心动力装置。然而长期运行中，铂催化剂溶解团聚、质子交换膜化学/力学退化、欧姆内阻上升等机制相互耦合，使输出性能持续衰减。</p>
+      <p class="zh">本研究基于<strong>同济大学约 1008 小时（360 余万采样点）长期耐久性实验数据</strong>，构建了一条从原始数据到大模型长期预测的完整技术链路，实现不依赖停机检测的近实时健康评估。</p>
+    </div>
+
+    <!-- 技术链路 -->
+    <div class="pipeline reveal">
+      <div class="pipe-step"><span class="pipe-no">1</span><p>耐久数据<br/>多阶段预处理</p></div>
+      <span class="pipe-arrow">→</span>
+      <div class="pipe-step"><span class="pipe-no">2</span><p>虚拟极化<br/>曲线重建</p></div>
+      <span class="pipe-arrow">→</span>
+      <div class="pipe-step"><span class="pipe-no">3</span><p>膜退化特征<br/>与 CHI 指标</p></div>
+      <span class="pipe-arrow">→</span>
+      <div class="pipe-step"><span class="pipe-no">4</span><p>能量健康<br/>指标体系</p></div>
+      <span class="pipe-arrow">→</span>
+      <div class="pipe-step pipe-step-hl"><span class="pipe-no">5</span><p>SEH-Time-LLM<br/>长期预测</p></div>
+    </div>
+
+    <!-- 关键数字 -->
+    <div class="metric-grid">
+      <div class="metric reveal"><b>1008<small>h</small></b><span>耐久实验时长 / 362.9 万样本</span></div>
+      <div class="metric reveal"><b>300</b><span>关键循环点重建虚拟极化曲线</span></div>
+      <div class="metric reveal"><b>0.9912</b><span>CHI 与归一化电压相关系数</span></div>
+      <div class="metric reveal"><b>56.9<small>%</small></b><span>RSE 较基础 Time-LLM 相对降低</span></div>
+      <div class="metric reveal"><b>97.3<small>%</small></b><span>拟合点达到高质量标准</span></div>
+      <div class="metric reveal"><b>97<small>%</small></b><span>语义映射压缩大模型词表</span></div>
+    </div>
+
+    <!-- 工作一 -->
+    <article class="r-block reveal">
+      <div class="r-text">
+        <span class="r-tag">工作一</span>
+        <h4>多阶段数据处理与虚拟极化曲线构建</h4>
+        <ul>
+          <li>通过数据完整性检查、多段文件合并与时间轴对齐、降采样提升原始数据质量；</li>
+          <li>从 9 个代表性电流条件（0.00–35.53 A）提取循环级电压退化趋势，经防脉冲干扰平均滤波获得稳定序列；</li>
+          <li>在 300 个关键循环点整合各电流平滑电压，<strong>重构虚拟极化曲线数据集</strong>，无需停机极化测试即可近实时刻画电池外特性；</li>
+          <li>退化分析：低电流密度区电压退化率约 <strong>2.56%</strong>，高电流密度区高达 <strong>15.44%</strong>，最大输出功率由 21.38 W 降至 18.08 W；95% 以上曲线满足物理单调约束。</li>
+        </ul>
+      </div>
+      <figure class="r-fig">
+        <img src="assets/images/thesis/thesis_2.png" alt="1008小时耐久性数据中电压、电流、功率随时间变化" loading="lazy" />
+        <figcaption>图 1 · 1008 h 耐久运行中电压 / 电流 / 功率时序</figcaption>
+      </figure>
+    </article>
+
+    <article class="r-block r-reverse reveal">
+      <div class="r-text">
+        <span class="r-tag">极化曲线演化</span>
+        <h4>高电流密度区对退化更敏感</h4>
+        <p>对比运行态与静置 12 小时恢复后的极化曲线族可见：初始（0 h）曲线显著外扩，随运行时长增加曲线持续内收；静置后部分性能可逆恢复，而高电流密度区保留了更明显的不可逆衰减——这与高电流下退化率 15.44% 的统计结论相互印证，为后续退化参数提取提供了可靠数据基础。</p>
+      </div>
+      <figure class="r-fig">
+        <img src="assets/images/thesis/thesis_4.png" alt="运行态与静置恢复后虚拟极化曲线族对比" loading="lazy" />
+        <figcaption>图 2 · 运行态 (a) 与静置恢复后 (b) 虚拟极化曲线演化</figcaption>
+      </figure>
+    </article>
+
+    <!-- 工作二 -->
+    <article class="r-block reveal">
+      <div class="r-text">
+        <span class="r-tag">工作二</span>
+        <h4>膜退化特征提取与综合健康指标 CHI</h4>
+        <ul>
+          <li>采用<strong>非线性最小二乘 + 信任域反射（Trust Region Reflective）算法</strong>拟合极化模型，识别交换电流密度 i₀、交叉电流密度 i_cross、欧姆内阻 R_ohm 等退化参数（拟合 RMSE 多在 5–15 mV，R² &gt; 0.97）；</li>
+          <li>分别构建欧姆退化指数与 ECSA（电化学活性面积）退化指数，按<strong>过电压贡献权重</strong>融合为综合健康指标 CHI；</li>
+          <li>CHI 从 1.000 单调下降至约 0.280（总退化约 72%），同时刻画催化活性衰减与欧姆内阻上升两个维度，与参考工况归一化电压相关系数达 <strong>r = 0.9912</strong>，验证了物理合理性。</li>
+        </ul>
+      </div>
+      <figure class="r-fig">
+        <img src="assets/images/thesis/thesis_1.png" alt="综合健康指标CHI随运行时间单调下降曲线" loading="lazy" />
+        <figcaption>图 3 · 综合健康指标 CHI 在 1000 h 内的演化</figcaption>
+      </figure>
+    </article>
+
+    <!-- 工作三 -->
+    <article class="r-block reveal">
+      <div class="r-text-full">
+        <span class="r-tag">工作三</span>
+        <h4>面向工程能量输出的健康状态指标体系</h4>
+        <p>从工程能量视角定义<strong>参考能量输出 REO、实际能量输出 AEO、循环能量保持率 CER、循环能量损失率 CEL</strong> 及其累计形式，量化 3076 个循环内能量输出能力的退化过程（CER 末期约 0.895）。Pearson 相关性分析表明：CER 与输出电压相关系数 0.984、累计 CER 与 CHI 相关系数 0.988，证明能量指标与机理退化指标高度一致，从而确立了「以 CER 为预测目标、CHI 为辅助信息」的预测框架。</p>
+      </div>
+    </article>
+
+    <!-- 工作四：核心模型 -->
+    <article class="r-block r-model reveal">
+      <div class="r-text-full">
+        <span class="r-tag r-tag-hl">工作四 · 核心模型</span>
+        <h4>SEH-Time-LLM：以冻结 Qwen3-14B 为骨干的长期退化预测</h4>
+        <p>在 Time-LLM 框架基础上，冻结 <strong>Qwen3-14B</strong> 大语言模型作为时序预测骨干，逐步引入五项改进，实现能量健康指标 CER 的长期预测：</p>
+        <div class="module-grid">
+          <div class="module"><b>① 语义映射</b><span>任务相关词表过滤 + 注意力聚合，将大模型词表压缩约 97%，滤除语义噪声、降低算力开销</span></div>
+          <div class="module"><b>② 层次多尺度对齐</b><span>局部–全局双分支 + 跨尺度注意力融合 + 流形约束超连接（mHC），联合建模短期波动与长期趋势</span></div>
+          <div class="module"><b>③ 领域知识结构化提示</b><span>构造物理先验、统计摘要、指令模板三类 Prompt，消融实验中为最关键的单步改进</span></div>
+          <div class="module"><b>④ 任务导向损失</b><span>MSE + 均值匹配正则项，提升长程预测的物理一致性</span></div>
+          <div class="module"><b>⑤ 多头对比残差分支</b><span>增强跨工况鲁棒性与训练稳定性</span></div>
+        </div>
+        <div class="result-strip">
+          <div><span>MAE</span><b>0.0054</b></div>
+          <div><span>RSE</span><b>0.6880</b></div>
+          <div><span>R²</span><b>0.5267</b></div>
+          <div><span>对比基线</span><b>6 个，全部优于</b></div>
+          <div><span>相对基础 Time-LLM</span><b>RSE ↓ 56.9%</b></div>
+        </div>
+        <p class="tl-note">注：该学位论文工作是会议论文（见<a href="#publications">「论文」板块</a>，IEEE PHM 2014 FCLAB 数据集、MAE 较最强基线降低 27.1%）的系统性扩展，预测目标由电压序列扩展为具有物理意义的能量健康指标，并新增极化曲线重建、健康指标体系与多变量输入分析。</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ 学术论文 ============ -->
+  <section class="section" id="publications">
+    <div class="sec-head reveal">
+      <h2><span class="sec-num">04</span>学术论文 <em>Publications</em></h2>
+    </div>
+
+    <div class="pub-list">
+      <article class="pub pub-highlight reveal">
+        <div class="pub-cover pub-cover-1">
+          <span class="pub-venue">PHM 2026</span>
+          <span class="pub-badge">Best Paper Award</span>
+        </div>
+        <div class="pub-body">
+          <h3 class="pub-title">A Semantic-Enhanced Hierarchical Time-LLM with Multi-Scale Alignment for Fuel Cell Degradation Prediction</h3>
+          <p class="pub-authors"><strong>Fan Zhang（张帆，唯一第一作者）</strong></p>
+          <p class="pub-meta"><span class="tag">EI 收录</span><span class="tag">国际会议</span><span class="tag tag-gold">大会最佳论文奖</span> The 16th Prognostics and System Health Management Conference · 2026.05</p>
+          <p class="pub-abstract">针对质子交换膜燃料电池电压退化强非线性、非平稳、多时间尺度耦合的难题，冻结 Qwen3-14B 作为时序基础模型，设计语义映射、层次化多尺度对齐与知识增强提示策略，将 LLM 适配到工程退化时序领域。在 IEEE PHM 2014 FCLAB 数据集上，FC1 设置 MAE=0.0035、R²=0.6394，<strong>相比最强基线 MAE 降低 27.1%</strong>；FC2 跨工况迁移设置 MAE=0.0096、R²=0.7531，训练稳定性更优。</p>
+          <p class="pub-keywords">Time-LLM · Time Series Forecasting · Large Language Model · PEMFC · Multi-Scale Alignment</p>
+        </div>
+      </article>
+
+      <article class="pub reveal">
+        <div class="pub-cover pub-cover-2">
+          <span class="pub-venue">IEEE TCPMT</span>
+          <span class="pub-badge">SCI / EI · 中科院三区</span>
+        </div>
+        <div class="pub-body">
+          <h3 class="pub-title">The effect of particle pollution on the temperature rise of assembled printed circuit boards</h3>
+          <p class="pub-authors">张帆（学生第二作者）</p>
+          <p class="pub-meta"><span class="tag">SCI 收录</span><span class="tag">EI 收录</span><span class="tag">中科院三区</span> IEEE Transactions on Components, Packaging and Manufacturing Technology · 2026.02 Early Access</p>
+          <p class="pub-abstract">面向电子设备小型化、高密度化下装配印制电路板（PCB）易受空气颗粒污染的问题，系统研究颗粒类型、覆盖量与分布对 PCB 表面及元器件局部温升、热可靠性与电接触可靠性的影响规律与作用机理；并结合连接器端子异物污染正交实验，通过特征工程与统计筛选构建污染动态特性数据集，为 PCB 及连接器的抗污染热设计与可靠性评估提供定量依据。</p>
+          <p class="pub-keywords">PCB Reliability · Particle Pollution · Thermal Rise · Electrical Contact · Unsupervised Learning</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 项目经历 ============ -->
+  <section class="section" id="projects">
+    <div class="sec-head reveal">
+      <h2><span class="sec-num">05</span>项目经历 <em>Projects</em></h2>
+    </div>
+    <div class="proj-grid">
+      <article class="proj-card reveal">
+        <div class="proj-top">
+          <h3>连接器端子异物敏感度研究</h3>
+          <time>2024.11 – 2025.05</time>
+        </div>
+        <p class="proj-role">北京邮电大学 · 学生第二作者 / 核心参与</p>
+        <ul>
+          <li>设计并执行<strong>数百组纤维正交实验</strong>，系统采集纤维污染条件下连接器的电接触动态特性数据；</li>
+          <li>通过特征工程与统计学筛选构建污染动态特性数据集，采用 <strong>SMOTE</strong> 算法解决样本不平衡问题；</li>
+          <li>参与开发并优化基于 <strong>DBSCAN</strong> 的无监督机器学习模型，预测纤维污染导致的电接触失效，<strong>准确率 &gt; 70%</strong>；</li>
+          <li>基于实验与模型结果为端子抗污染结构设计提供量化依据，成果以学生二作发表于 <strong>IEEE TCPMT</strong>。</li>
+        </ul>
+        <div class="tag-row"><span class="tag">DBSCAN</span><span class="tag">SMOTE</span><span class="tag">特征工程</span><span class="tag">无监督学习</span><span class="tag">可靠性评估</span></div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-top">
+          <h3>工业人机界面（HMI）语音控制系统</h3>
+          <time>本科毕业设计 · 2024</time>
+        </div>
+        <p class="proj-role">北京科技大学 · 独立开发</p>
+        <ul>
+          <li>面向工业自动化场景的人机交互需求，调用<strong>语音识别 SDK</strong> 实现工业命令词语音识别；</li>
+          <li>使用 <strong>Java</strong> 开发 REST 接口转发程序，将识别结果经 WinCC REST 服务写入组态系统内部变量；</li>
+          <li>利用 <strong>WinCC 全局脚本</strong>实现语音控制画面自动切换，打通「语音输入 → 识别 → 接口转发 → 变量写入 → 界面联动」的完整工业人机交互链路。</li>
+        </ul>
+        <div class="tag-row"><span class="tag">Java</span><span class="tag">REST API</span><span class="tag">WinCC</span><span class="tag">语音识别 SDK</span><span class="tag">工业 HMI</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 实习经历 ============ -->
+  <section class="section" id="experience">
+    <div class="sec-head reveal">
+      <h2><span class="sec-num">06</span>实习经历 <em>Experience</em></h2>
+    </div>
+    <article class="exp-card reveal">
+      <div class="exp-head">
+        <div>
+          <h3>北京世纪好未来教育科技有限公司</h3>
+          <p class="exp-role">大模型项目部 · 算法实习生</p>
+        </div>
+        <time>2025.08 – 2026.06</time>
+      </div>
+      <p class="exp-bg"><strong>项目背景：</strong>面向 K12 场景，将学生拍照上传的整页英文试卷自动转化为逐题结构化结果，经大模型分析后在原图上完成对错标注与可视化渲染，支撑大规模作业与考试的自动化批改。</p>
+      <div class="exp-cols">
+        <div>
+          <h4>① 英语教辅批改 Pipeline 搭建</h4>
+          <p>搭建并迭代覆盖 <strong>OCR 集成、作答区域检测、题型化后处理</strong>的端到端 Pipeline；以 VLM 的 OCR 增强传统拆录 OCR 提升手写答案识别准确率，优化作答区域检测使召回提升约 5%，新增题型后处理策略使误批进一步降低约 10%。</p>
+        </div>
+        <div>
+          <h4>② 模型选型与提示工程</h4>
+          <p>负责大模型选型对比与指令微调，基于错误分析持续迭代 Prompt，重点解决 <strong>XML 结构、字段顺序、多小题拆分</strong>等问题，显著提升模型输出的可解析性与一致性。</p>
+        </div>
+      </div>
+      <div class="exp-result">
+        <h4>工作成果</h4>
+        <div class="result-strip">
+          <div><span>整体误批率</span><b>相对 ↓10–15%</b></div>
+          <div><span>关键作答区召回</span><b>↑ 5%</b></div>
+          <div><span>XML 解析成功率</span><b>稳定 ≥ 95%</b></div>
+          <div><span>落地</span><b>全量上线核心学习机</b></div>
+        </div>
+      </div>
+      <div class="tag-row"><span class="tag">大语言模型</span><span class="tag">指令微调</span><span class="tag">Prompt Engineering</span><span class="tag">OCR / VLM</span><span class="tag">端到端 Pipeline</span></div>
+    </article>
+  </section>
+
+  <!-- ============ 荣誉奖项 ============ -->
+  <section class="section" id="honors">
+    <div class="sec-head reveal">
+      <h2><span class="sec-num">07</span>荣誉与社会工作 <em>Honors &amp; Activities</em></h2>
+    </div>
+    <div class="honor-cols">
+      <ul class="honor-list">
+        <li class="reveal"><span class="honor-date">2026.05</span><div><b>PHM 2026 大会最佳论文奖</b><p>唯一第一作者，国际会议 EI 收录</p></div></li>
+        <li class="reveal"><span class="honor-date">2025.12</span><div><b>北京邮电大学 一等奖学金</b><p>校级</p></div></li>
+        <li class="reveal"><span class="honor-date">在校期间</span><div><b>校级优秀学生干部</b><p>学生工作表现突出</p></div></li>
+        <li class="reveal"><span class="honor-date">2023.03</span><div><b>全国大学英语六级 CET-6 · 495</b><p>四级 CET-4 · 482（2021.06）</p></div></li>
+      </ul>
+      <div class="activity-card reveal">
+        <h4>社会工作与组织经历</h4>
+        <div class="act-item">
+          <b>北京邮电大学控制科学与工程研究生第三党支部 · 副书记</b>
+          <time>2024.11 – 至今</time>
+          <p>负责支部活动组织与党员管理工作。</p>
+        </div>
+        <div class="act-item">
+          <b>北京科技大学校团委社会实践与志愿服务中心 · 主席</b>
+          <time>2021.04 – 2023.09</time>
+          <p>策划组织志愿活动，累计服务超 <strong>1000 人次</strong>、提供超 <strong>7000 小时</strong>志愿工时；组织 300 余人参与暑期社会实践与寒假返校招生宣传。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 技能 ============ -->
+  <section class="section" id="skills">
+    <div class="sec-head reveal">
+      <h2><span class="sec-num">08</span>技术能力 <em>Skills</em></h2>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-group reveal">
+        <h4>AI 与模型</h4>
+        <div class="tag-row">
+          <span class="tag tag-solid">大语言模型 LLM</span><span class="tag tag-solid">LoRA 指令微调</span><span class="tag tag-solid">Prompt Engineering</span><span class="tag tag-solid">时间序列预测</span><span class="tag tag-solid">PatchTST / TimeLLM</span><span class="tag tag-solid">Transformer 系</span><span class="tag tag-solid">DBSCAN / SMOTE</span><span class="tag tag-solid">传统机器学习</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>工程与开发</h4>
+        <div class="tag-row">
+          <span class="tag tag-solid">Python（熟练）</span><span class="tag tag-solid">PyTorch</span><span class="tag tag-solid">端到端 Pipeline</span><span class="tag tag-solid">OCR / VLM</span><span class="tag tag-solid">Java</span><span class="tag tag-solid">SQL</span><span class="tag tag-solid">Git</span><span class="tag tag-solid">数据处理与可视化</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>领域知识</h4>
+        <div class="tag-row">
+          <span class="tag tag-solid">燃料电池健康管理</span><span class="tag tag-solid">工业可靠性</span><span class="tag tag-solid">现代控制理论</span><span class="tag tag-solid">强化学习与控制</span><span class="tag tag-solid">模式识别</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h4>语言能力</h4>
+        <div class="lang-bars">
+          <div class="lang"><span>中文（母语）</span><div class="bar"><i style="width:100%"></i></div></div>
+          <div class="lang"><span>英语 CET-6（可读写英文文献、撰写论文）</span><div class="bar"><i style="width:80%"></i></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 联系 ============ -->
+  <section class="section section-contact" id="contact">
+    <div class="contact-card reveal">
+      <h2>欢迎与我联系 <em>Get in Touch</em></h2>
+      <p>无论是科研合作、工程交流，还是校招机会，都欢迎通过邮件或 GitHub 找到我。</p>
+      <div class="contact-links">
+        <a class="contact-item" href="mailto:fan01118@163.com">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 6h18v12H3z"/><path fill="none" stroke="currentColor" stroke-width="2" d="M3 7l9 6 9-6"/></svg>
+          <div><b>Email</b><span>fan01118@163.com</span></div>
+        </a>
+        <a class="contact-item" href="https://github.com/Zzz-F08" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 .5A11.5 11.5 0 00.5 12a11.5 11.5 0 007.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0023.5 12 11.5 11.5 0 0012 .5z"/></svg>
+          <div><b>GitHub</b><span>@Zzz-F08</span></div>
+        </a>
+        <a class="contact-item" href="assets/files/ZhangFan_Resume.pdf" target="_blank" rel="noopener" download>
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+          <div><b>简历</b><span>下载 ZhangFan_Resume.pdf</span></div>
+        </a>
+      </div>
+      <blockquote class="contact-motto">行远自迩，笃行不怠。</blockquote>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 张帆 Fan Zhang · 北京邮电大学</p>
+    <p class="footer-note">Designed &amp; built by Zhang Fan · 纯手工静态页面，托管于 GitHub Pages</p>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M6 15l6-6 6 6"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
