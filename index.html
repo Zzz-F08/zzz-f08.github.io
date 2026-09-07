@@ -94,16 +94,10 @@
         <figcaption>于瑞士日内瓦 · 联合国万国宫</figcaption>
       </figure>
       <div class="about-text reveal">
-        <p>我是<strong>张帆</strong>，2001 年 11 月出生，中共党员，现为<strong>北京邮电大学智能与自动化学院控制科学与工程专业</strong>硕士研究生（2024.09–2027.06），本科毕业于北京科技大学自动化专业。</p>
-        <p>科研上，我兼具自动化与人工智能理论基础，研究覆盖<strong>机器学习、时间序列预测与大语言模型应用</strong>：以<strong>唯一第一作者</strong>完成燃料电池退化预测论文，发表于 PHM 2026 国际会议（EI 收录）并荣获<strong>大会最佳论文奖</strong>；以学生第二作者在 <strong>IEEE TCPMT</strong> 期刊发表连接器可靠性方向论文（SCI/EI，中科院三区）。</p>
-        <p>工程上，我重视技术的真实落地价值，曾在<strong>好未来集团大模型项目部</strong>担任算法实习生，主导 K12 英语智能批改端到端 Pipeline，优化后的 Prompt 策略<strong>全量上线公司核心学习机产品</strong>，完成了从「做研究」到「做产品」的跨越。</p>
-        <p>历任校团委志愿服务中心主席、研究生党支部副书记，做事踏实稳重、执行力强；生活中热爱羽毛球与游泳。</p>
-        <div class="stat-row">
-          <div class="stat"><b data-count="2">0</b><span>学术论文</span></div>
-          <div class="stat"><b data-count="1">0</b><span>最佳论文奖</span></div>
-          <div class="stat"><b data-count="1">0</b><span>上线 AI 产品</span></div>
-          <div class="stat"><b data-count="7000" data-suffix="+">0</b><span>志愿工时</span></div>
-        </div>
+        <p><strong>张帆</strong>，2001 年 11 月出生，中共党员，现为<strong>北京邮电大学智能与自动化学院控制科学与工程专业</strong>硕士研究生（2024.09–2027.06），本科毕业于北京科技大学自动化专业。</p>
+        <p>科研方面，具备扎实的自动化与人工智能理论基础，研究方向覆盖<strong>机器学习、时间序列预测与大语言模型工程应用</strong>：以<strong>唯一第一作者</strong>完成燃料电池退化预测论文，发表于 PHM 2026 国际会议（EI 收录）并获<strong>大会最佳论文奖</strong>；以学生第二作者在 <strong>IEEE TCPMT</strong> 期刊发表连接器可靠性方向论文（SCI/EI，中科院三区）。</p>
+        <p>工程实践方面，注重技术的真实落地价值，曾在<strong>好未来集团大模型项目部</strong>担任算法实习生，主导 K12 英语智能批改 Pipeline 的搭建与迭代，优化后的 Prompt 策略<strong>全量上线公司核心学习机产品</strong>，完成从「做研究」到「做产品」的实践闭环。</p>
+        <p>历任校团委社会实践与志愿服务中心主席、研究生党支部副书记，工作踏实稳重、执行力强；业余热爱羽毛球与游泳。</p>
       </div>
     </div>
   </section>
@@ -158,7 +152,6 @@
   <section class="section" id="research">
     <div class="sec-head reveal">
       <h2><span class="sec-num">03</span>硕士研究专题 <em>Master's Research</em></h2>
-      <p class="sec-sub">这一部分是我学位论文工作的完整展开，比纸面简历更系统地呈现研究链路与结果。</p>
     </div>
 
     <div class="research-hero reveal">
@@ -167,18 +160,24 @@
       <p class="zh">本研究基于<strong>同济大学约 1008 小时（360 余万采样点）长期耐久性实验数据</strong>，构建了一条从原始数据到大模型长期预测的完整技术链路，实现不依赖停机检测的近实时健康评估。</p>
     </div>
 
-    <!-- 技术链路 -->
+    <!-- 五阶段技术链路 -->
     <div class="pipeline reveal">
-      <div class="pipe-step"><span class="pipe-no">1</span><p>耐久数据<br/>多阶段预处理</p></div>
+      <div class="pipe-step"><span class="pipe-no">1</span><p>虚拟极化<br/>曲线构建</p></div>
       <span class="pipe-arrow">→</span>
-      <div class="pipe-step"><span class="pipe-no">2</span><p>虚拟极化<br/>曲线重建</p></div>
+      <div class="pipe-step"><span class="pipe-no">2</span><p>膜退化特征<br/>与 CHI 指标</p></div>
       <span class="pipe-arrow">→</span>
-      <div class="pipe-step"><span class="pipe-no">3</span><p>膜退化特征<br/>与 CHI 指标</p></div>
+      <div class="pipe-step"><span class="pipe-no">3</span><p>能量指标体系<br/>与多源融合</p></div>
       <span class="pipe-arrow">→</span>
-      <div class="pipe-step"><span class="pipe-no">4</span><p>能量健康<br/>指标体系</p></div>
+      <div class="pipe-step"><span class="pipe-no">4</span><p>SEH-Time-LLM<br/>长期预测</p></div>
       <span class="pipe-arrow">→</span>
-      <div class="pipe-step pipe-step-hl"><span class="pipe-no">5</span><p>SEH-Time-LLM<br/>长期预测</p></div>
+      <div class="pipe-step pipe-step-hl"><span class="pipe-no">5</span><p>TrendAnchor<br/>机理-数据融合</p></div>
     </div>
+
+    <!-- 总体研究框架图 -->
+    <figure class="r-framework reveal">
+      <img src="assets/images/thesis/framework.png" alt="研究总体框架：从长期耐久性数据到 SEH-Time-LLM 与 TrendAnchor 的五阶段技术链路" loading="lazy" />
+      <figcaption>图 1 · 总体研究框架：五阶段技术链路（数据处理 → 健康指标 → 大模型预测 → 机理融合）</figcaption>
+    </figure>
 
     <!-- 关键数字 -->
     <div class="metric-grid">
@@ -193,7 +192,7 @@
     <!-- 工作一 -->
     <article class="r-block reveal">
       <div class="r-text">
-        <span class="r-tag">工作一</span>
+        <span class="r-tag">阶段一 · 数据处理</span>
         <h4>多阶段数据处理与虚拟极化曲线构建</h4>
         <ul>
           <li>通过数据完整性检查、多段文件合并与时间轴对齐、降采样提升原始数据质量；</li>
@@ -204,26 +203,26 @@
       </div>
       <figure class="r-fig">
         <img src="assets/images/thesis/thesis_2.png" alt="1008小时耐久性数据中电压、电流、功率随时间变化" loading="lazy" />
-        <figcaption>图 1 · 1008 h 耐久运行中电压 / 电流 / 功率时序</figcaption>
+        <figcaption>图 2 · 1008 h 耐久运行中电压 / 电流 / 功率时序</figcaption>
       </figure>
     </article>
 
     <article class="r-block r-reverse reveal">
       <div class="r-text">
-        <span class="r-tag">极化曲线演化</span>
+        <span class="r-tag">阶段一 · 退化分析</span>
         <h4>高电流密度区对退化更敏感</h4>
         <p>对比运行态与静置 12 小时恢复后的极化曲线族可见：初始（0 h）曲线显著外扩，随运行时长增加曲线持续内收；静置后部分性能可逆恢复，而高电流密度区保留了更明显的不可逆衰减——这与高电流下退化率 15.44% 的统计结论相互印证，为后续退化参数提取提供了可靠数据基础。</p>
       </div>
       <figure class="r-fig">
         <img src="assets/images/thesis/thesis_4.png" alt="运行态与静置恢复后虚拟极化曲线族对比" loading="lazy" />
-        <figcaption>图 2 · 运行态 (a) 与静置恢复后 (b) 虚拟极化曲线演化</figcaption>
+        <figcaption>图 3 · 运行态 (a) 与静置恢复后 (b) 虚拟极化曲线演化</figcaption>
       </figure>
     </article>
 
     <!-- 工作二 -->
     <article class="r-block reveal">
       <div class="r-text">
-        <span class="r-tag">工作二</span>
+        <span class="r-tag">阶段二 · 健康指标</span>
         <h4>膜退化特征提取与综合健康指标 CHI</h4>
         <ul>
           <li>采用<strong>非线性最小二乘 + 信任域反射（Trust Region Reflective）算法</strong>拟合极化模型，识别交换电流密度 i₀、交叉电流密度 i_cross、欧姆内阻 R_ohm 等退化参数（拟合 RMSE 多在 5–15 mV，R² &gt; 0.97）；</li>
@@ -233,14 +232,14 @@
       </div>
       <figure class="r-fig">
         <img src="assets/images/thesis/thesis_1.png" alt="综合健康指标CHI随运行时间单调下降曲线" loading="lazy" />
-        <figcaption>图 3 · 综合健康指标 CHI 在 1000 h 内的演化</figcaption>
+        <figcaption>图 4 · 综合健康指标 CHI 在 1000 h 内的演化</figcaption>
       </figure>
     </article>
 
     <!-- 工作三 -->
     <article class="r-block reveal">
       <div class="r-text-full">
-        <span class="r-tag">工作三</span>
+        <span class="r-tag">阶段三 · 能量建模</span>
         <h4>面向工程能量输出的健康状态指标体系</h4>
         <p>从工程能量视角定义<strong>参考能量输出 REO、实际能量输出 AEO、循环能量保持率 CER、循环能量损失率 CEL</strong> 及其累计形式，量化 3076 个循环内能量输出能力的退化过程（CER 末期约 0.895）。Pearson 相关性分析表明：CER 与输出电压相关系数 0.984、累计 CER 与 CHI 相关系数 0.988，证明能量指标与机理退化指标高度一致，从而确立了「以 CER 为预测目标、CHI 为辅助信息」的预测框架。</p>
       </div>
@@ -249,15 +248,15 @@
     <!-- 工作四：核心模型 -->
     <article class="r-block r-model reveal">
       <div class="r-text-full">
-        <span class="r-tag r-tag-hl">工作四 · 核心模型</span>
+        <span class="r-tag r-tag-hl">阶段四 · 核心模型</span>
         <h4>SEH-Time-LLM：以冻结 Qwen3-14B 为骨干的长期退化预测</h4>
         <p>在 Time-LLM 框架基础上，冻结 <strong>Qwen3-14B</strong> 大语言模型作为时序预测骨干，逐步引入五项改进，实现能量健康指标 CER 的长期预测：</p>
         <div class="module-grid">
-          <div class="module"><b>① 语义映射</b><span>任务相关词表过滤 + 注意力聚合，将大模型词表压缩约 97%，滤除语义噪声、降低算力开销</span></div>
-          <div class="module"><b>② 层次多尺度对齐</b><span>局部–全局双分支 + 跨尺度注意力融合 + 流形约束超连接（mHC），联合建模短期波动与长期趋势</span></div>
-          <div class="module"><b>③ 领域知识结构化提示</b><span>构造物理先验、统计摘要、指令模板三类 Prompt，消融实验中为最关键的单步改进</span></div>
-          <div class="module"><b>④ 任务导向损失</b><span>MSE + 均值匹配正则项，提升长程预测的物理一致性</span></div>
-          <div class="module"><b>⑤ 多头对比残差分支</b><span>增强跨工况鲁棒性与训练稳定性</span></div>
+          <div class="module"><b>① 语义映射模块</b><span>时序 Patch 与可学习语义原型一一对应，将大模型词表压缩约 97%，滤除语义噪声、降低算力开销</span></div>
+          <div class="module"><b>② 多尺度对齐机制</b><span>原始 / 趋势 / 残差分解，结合跨尺度注意力融合与 mHC 流形超连接，联合建模短期波动与长期趋势</span></div>
+          <div class="module"><b>③ 领域知识结构化提示</b><span>将 PEMFC 退化机理注入为可学习提示词，消融实验中为最关键的单步改进（RSE 1.576→0.811）</span></div>
+          <div class="module"><b>④ 任务导向损失</b><span>MSE 叠加均值匹配正则项，抑制长预测窗口下的趋势漂移，提升物理一致性</span></div>
+          <div class="module"><b>⑤ mHC 残差分支</b><span>多头对比叠加流形超连接，增强跨层信息复用、跨工况鲁棒性与训练稳定性</span></div>
         </div>
         <div class="result-strip">
           <div><span>MAE</span><b>0.0054</b></div>
@@ -268,6 +267,24 @@
         </div>
         <p class="tl-note">注：该学位论文工作是会议论文（见<a href="#publications">「论文」板块</a>，IEEE PHM 2014 FCLAB 数据集、MAE 较最强基线降低 27.1%）的系统性扩展，预测目标由电压序列扩展为具有物理意义的能量健康指标，并新增极化曲线重建、健康指标体系与多变量输入分析。</p>
       </div>
+    </article>
+
+    <!-- 工作五：TrendAnchor 机理-数据融合 -->
+    <article class="r-block r-reverse reveal">
+      <div class="r-text">
+        <span class="r-tag r-tag-hl">阶段五 · 机理融合</span>
+        <h4>TrendAnchor：面向机理-数据融合的多变量输入机制</h4>
+        <p>传统多变量输入将 CHI 视作普通特征列，其携带的退化先验会在层层自注意力中被「语义稀释」。为此将 CHI 由普通输入特征提升为<strong>「趋势方向锚点」</strong>，设计 TrendAnchor 双支路融合机制：</p>
+        <ul>
+          <li>构建 <strong>CER-CHI 多源对齐数据集</strong>：以循环编号为公共时间轴，对 300 个关键循环点的稀疏 CHI 线性插值至 CER 分辨率，共 3001 个样本，按 7:1:2 严格时序划分；</li>
+          <li><strong>双支路显式分工</strong>：CHI 与时间标记馈入 <strong>GRU 趋势支路</strong>输出趋势分量，CER / CHI 经 SEH-Time-LLM 输出残差分量，二者经<strong>波动率门控</strong>自适应融合 <code>CER_pred = trend + g(σ_CER)·(residual − trend)</code>——波动越大越倚重机理趋势、序列越平稳越倚重数据残差；</li>
+          <li>四组受控对照（S / MS-CHI / MS-lag / MS-shuffled，4 个随机种子）表明 <strong>MS-CHI &gt; S &gt; MS-shuffled ≈ MS-lag</strong>，排除「维度扩展」与「值域分布」两类混淆，证实 CHI 机理先验对长期预测的实质增益。</li>
+        </ul>
+      </div>
+      <figure class="r-fig">
+        <img src="assets/images/thesis/stage5.png" alt="TrendAnchor 趋势锚定与波动率门控融合机制" loading="lazy" />
+        <figcaption>图 5 · TrendAnchor 趋势锚定与波动率门控融合机制</figcaption>
+      </figure>
     </article>
   </section>
 
@@ -404,7 +421,7 @@
         <div class="act-item">
           <b>北京科技大学校团委社会实践与志愿服务中心 · 主席</b>
           <time>2021.04 – 2023.09</time>
-          <p>策划组织志愿活动，累计服务超 <strong>1000 人次</strong>、提供超 <strong>7000 小时</strong>志愿工时；组织 300 余人参与暑期社会实践与寒假返校招生宣传。</p>
+          <p>策划组织各类志愿活动，累计服务超 <strong>1000 人次</strong>，本人志愿服务时长 <strong>400 余小时</strong>；组织 300 余人参与暑期社会实践与寒假返校招生宣传。</p>
         </div>
       </div>
     </div>
@@ -425,7 +442,7 @@
       <div class="skill-group reveal">
         <h4>工程与开发</h4>
         <div class="tag-row">
-          <span class="tag tag-solid">Python（熟练）</span><span class="tag tag-solid">PyTorch</span><span class="tag tag-solid">端到端 Pipeline</span><span class="tag tag-solid">OCR / VLM</span><span class="tag tag-solid">Java</span><span class="tag tag-solid">SQL</span><span class="tag tag-solid">Git</span><span class="tag tag-solid">数据处理与可视化</span>
+          <span class="tag tag-solid">Python（熟练）</span><span class="tag tag-solid">PyTorch</span><span class="tag tag-solid">C 语言</span><span class="tag tag-solid">SQL</span><span class="tag tag-solid">Linux</span>
         </div>
       </div>
       <div class="skill-group reveal">
