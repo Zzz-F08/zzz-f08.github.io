@@ -242,7 +242,14 @@ em { font-style: normal; }
 .r-fig img { width: 100%; }
 .r-fig figcaption { font-size: 12.5px; color: var(--muted); text-align: center; padding: 9px; background: var(--surface-2); }
 .r-text-full { grid-column: 1 / -1; }
-.r-model { display: block; background: linear-gradient(180deg, var(--surface), var(--surface-2)); border-color: color-mix(in srgb, var(--primary) 30%, var(--line)); }
+.r-model { background: linear-gradient(180deg, var(--surface), var(--surface-2)); border-color: color-mix(in srgb, var(--primary) 30%, var(--line)); align-items: center; }
+.r-arch { align-self: center; }
+.r-arch img { width: auto; max-width: 100%; max-height: 760px; margin: 0 auto; background: #fff; }
+.model-pts { list-style: none; counter-reset: mp; display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
+.model-pts li { position: relative; padding-left: 32px; font-size: 14px; line-height: 1.62; color: var(--ink-soft); }
+.model-pts li::before { counter-increment: mp; content: counter(mp); position: absolute; left: 0; top: 1px; width: 22px; height: 22px; border-radius: 50%; background: var(--primary-soft); color: var(--primary); font-size: 12px; font-weight: 800; display: grid; place-items: center; }
+.model-pts b { display: inline-block; margin-right: 6px; color: var(--ink); font-weight: 700; }
+.model-pts span { color: var(--ink-soft); }
 .module-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 16px 0 20px; }
 .module { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--primary-2); border-radius: var(--radius-sm); padding: 14px 16px; }
 .module b { display: block; font-size: 14.5px; margin-bottom: 5px; color: var(--ink); }
@@ -261,14 +268,6 @@ em { font-style: normal; }
   background: var(--primary-soft); color: var(--primary); padding: 2px 7px; border-radius: 6px;
   word-break: break-word; white-space: normal;
 }
-
-/* 阶段四：模型架构图 + 指标对比图并排 */
-.r-figpair { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 20px; align-items: stretch; margin: 18px 0 20px; }
-.r-figpair .r-fig { margin: 0; display: flex; flex-direction: column; }
-.r-figpair .r-fig img { width: 100%; }
-.r-figpair .r-fig:first-child { justify-content: center; background: #fff; }
-.r-figpair .r-fig:first-child img { max-height: 470px; object-fit: contain; background: #fff; }
-.r-figpair .r-fig figcaption { margin-top: auto; }
 
 /* 阶段五：TrendAnchor 纯 CSS 双支路融合机制图 */
 .ta-flow { display: grid; grid-template-columns: minmax(0, 1.12fr) 20px minmax(0, 1.32fr) 20px minmax(0, .92fr); align-items: stretch; gap: 8px; margin: 20px 0 16px; }
@@ -402,7 +401,7 @@ html.anim-on .reveal.visible { opacity: 1; transform: translateY(0); }
 .metric-grid > *, .stat-row > *, .result-strip > *, .module-grid > *,
 .contact-links > *, .course-grid > *, .timeline > *, .exp-cols > *,
 .pipeline > *, .skill-groups > *, .pub-list > *, .about-text, .pub-body,
-.r-figpair > *, .ta-flow > *, .ta-in > * { min-width: 0; }
+.model-pts > *, .ta-flow > *, .ta-in > * { min-width: 0; }
 .pub-title, .pub-keywords, .hero-field, .module span, .proj-card li, .r-text li { overflow-wrap: break-word; word-break: break-word; }
 
 /* ---------- 响应式 ---------- */
@@ -429,8 +428,7 @@ html.anim-on .reveal.visible { opacity: 1; transform: translateY(0); }
   .nav-burger { display: flex; }
   .r-block, .r-reverse { grid-template-columns: 1fr; gap: 22px; }
   .r-reverse .r-text { order: 0; }
-  .r-figpair { grid-template-columns: 1fr; }
-  .r-figpair .r-fig:first-child img { max-height: none; max-width: 340px; margin: 0 auto; }
+  .r-arch img { max-height: 560px; }
   .ta-flow { grid-template-columns: 1fr; gap: 10px; }
   .ta-arrow { transform: rotate(90deg); justify-self: center; }
   .pub { grid-template-columns: 1fr; }

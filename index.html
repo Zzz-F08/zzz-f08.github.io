@@ -232,29 +232,25 @@
       </div>
     </article>
 
-    <!-- 工作四：核心模型 -->
+    <!-- 阶段四：核心模型（左框架图 · 右五项说明） -->
     <article class="r-block r-model reveal">
-      <div class="r-text-full">
+      <figure class="r-fig r-arch">
+        <img src="assets/images/thesis/model_arch.png" alt="SEH-Time-LLM 网络结构：冻结 Qwen3-14B 骨干、语义原型生成器、多尺度对齐与 mHC" loading="lazy" />
+        <figcaption>图 4 · SEH-Time-LLM 网络结构（冻结 Qwen3-14B 骨干，语义原型 + 多尺度对齐 + mHC）</figcaption>
+      </figure>
+      <div class="r-text">
         <span class="r-tag r-tag-hl">阶段四 · 核心模型</span>
         <h4>SEH-Time-LLM：以冻结 Qwen3-14B 为骨干的长期退化预测</h4>
         <p>在 Time-LLM 框架基础上，冻结 <strong>Qwen3-14B</strong> 大语言模型作为时序预测骨干，逐步引入五项改进，实现能量健康指标 CER 的长期预测：</p>
-        <div class="module-grid">
-          <div class="module"><b>① 语义映射模块</b><span>时序 Patch 与可学习语义原型一一对应，将大模型词表压缩约 97%，滤除语义噪声、降低算力开销</span></div>
-          <div class="module"><b>② 多尺度对齐机制</b><span>原始 / 趋势 / 残差分解，结合跨尺度注意力融合与 mHC 流形超连接，联合建模短期波动与长期趋势</span></div>
-          <div class="module"><b>③ 领域知识结构化提示</b><span>将 PEMFC 退化机理注入为可学习提示词，消融实验中为最关键的单步改进（RSE 1.576→0.811）</span></div>
-          <div class="module"><b>④ 任务导向损失</b><span>MSE 叠加均值匹配正则项，抑制长预测窗口下的趋势漂移，提升物理一致性</span></div>
-          <div class="module"><b>⑤ mHC 残差分支</b><span>多头对比叠加流形超连接，增强跨层信息复用、跨工况鲁棒性与训练稳定性</span></div>
-        </div>
-        <div class="r-figpair">
-          <figure class="r-fig">
-            <img src="assets/images/thesis/model_arch.png" alt="SEH-Time-LLM 网络结构：冻结 LLM 骨干、语义原型生成器、多尺度对齐与 mHC" loading="lazy" />
-            <figcaption>图 4 · SEH-Time-LLM 网络结构（冻结 Qwen3-14B 骨干，语义原型 + 多尺度对齐 + mHC）</figcaption>
-          </figure>
-          <figure class="r-fig">
-            <img src="assets/images/thesis/metrics_bar.png" alt="各基线模型 MAE 与 RSE 指标柱状对比，SEH-Time-LLM 双指标最低" loading="lazy" />
-            <figcaption>图 5 · 与六类基线的 MAE / RSE 对比，SEH-Time-LLM（本文）双指标均为最优</figcaption>
-          </figure>
-        </div>
+        <ol class="model-pts">
+          <li><b>语义映射模块</b><span>时序 Patch 与可学习语义原型一一对应，将大模型词表压缩约 97%，滤除语义噪声、降低算力开销。</span></li>
+          <li><b>多尺度对齐机制</b><span>原始 / 趋势 / 残差分解，结合跨尺度注意力与 mHC 流形超连接，联合建模短期波动与长期趋势。</span></li>
+          <li><b>领域知识结构化提示</b><span>将 PEMFC 退化机理注入为可学习提示词，是消融实验中最关键的单步改进（RSE 1.576→0.811）。</span></li>
+          <li><b>任务导向损失</b><span>MSE 叠加均值匹配正则项，抑制长预测窗口下的趋势漂移，提升物理一致性。</span></li>
+          <li><b>mHC 残差分支</b><span>多头对比叠加流形超连接，增强跨层信息复用、跨工况鲁棒性与训练稳定性。</span></li>
+        </ol>
+      </div>
+      <div class="r-text-full">
         <div class="result-strip">
           <div><span>MAE</span><b>0.0054</b></div>
           <div><span>RSE</span><b>0.6880</b></div>
