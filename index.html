@@ -175,7 +175,7 @@
 
     <!-- 总体研究框架图 -->
     <figure class="r-framework reveal">
-      <img src="assets/images/thesis/framework.png" alt="研究总体框架：从长期耐久性数据到 SEH-Time-LLM 与 TrendAnchor 的五阶段技术链路" loading="lazy" />
+      <img src="assets/images/thesis/framework.jpg" alt="研究总体框架：从长期耐久性数据到 SEH-Time-LLM 与 TrendAnchor 的五阶段技术链路" loading="lazy" />
       <figcaption>图 1 · 总体研究框架：五阶段技术链路（数据处理 → 健康指标 → 大模型预测 → 机理融合）</figcaption>
     </figure>
 
@@ -189,33 +189,20 @@
       <div class="metric reveal"><b>97<small>%</small></b><span>语义映射压缩大模型词表</span></div>
     </div>
 
-    <!-- 工作一 -->
+    <!-- 阶段一：数据基础（合并为一块） -->
     <article class="r-block reveal">
       <div class="r-text">
-        <span class="r-tag">阶段一 · 数据处理</span>
-        <h4>多阶段数据处理与虚拟极化曲线构建</h4>
+        <span class="r-tag">阶段一 · 数据基础</span>
+        <h4>数据预处理与虚拟极化曲线构建</h4>
         <ul>
-          <li>通过数据完整性检查、多段文件合并与时间轴对齐、降采样提升原始数据质量；</li>
-          <li>从 9 个代表性电流条件（0.00–35.53 A）提取循环级电压退化趋势，经防脉冲干扰平均滤波获得稳定序列；</li>
+          <li>通过完整性检查、多段文件合并与时间轴对齐、降采样清洗原始数据；从 9 个代表性电流条件（0.00–35.53 A）提取循环级电压退化趋势，经防脉冲干扰平均滤波获得稳定序列；</li>
           <li>在 300 个关键循环点整合各电流平滑电压，<strong>重构虚拟极化曲线数据集</strong>，无需停机极化测试即可近实时刻画电池外特性；</li>
-          <li>退化分析：低电流密度区电压退化率约 <strong>2.56%</strong>，高电流密度区高达 <strong>15.44%</strong>，最大输出功率由 21.38 W 降至 18.08 W；95% 以上曲线满足物理单调约束。</li>
+          <li>退化规律：低电流密度区电压退化率约 <strong>2.56%</strong>、高电流密度区高达 <strong>15.44%</strong>，最大输出功率由 21.38 W 降至 18.08 W；95% 以上曲线满足物理单调约束，且高电流密度区保留了更明显的不可逆衰减。</li>
         </ul>
       </div>
       <figure class="r-fig">
-        <img src="assets/images/thesis/thesis_2.png" alt="1008小时耐久性数据中电压、电流、功率随时间变化" loading="lazy" />
-        <figcaption>图 2 · 1008 h 耐久运行中电压 / 电流 / 功率时序</figcaption>
-      </figure>
-    </article>
-
-    <article class="r-block r-reverse reveal">
-      <div class="r-text">
-        <span class="r-tag">阶段一 · 退化分析</span>
-        <h4>高电流密度区对退化更敏感</h4>
-        <p>对比运行态与静置 12 小时恢复后的极化曲线族可见：初始（0 h）曲线显著外扩，随运行时长增加曲线持续内收；静置后部分性能可逆恢复，而高电流密度区保留了更明显的不可逆衰减——这与高电流下退化率 15.44% 的统计结论相互印证，为后续退化参数提取提供了可靠数据基础。</p>
-      </div>
-      <figure class="r-fig">
-        <img src="assets/images/thesis/thesis_4.png" alt="运行态与静置恢复后虚拟极化曲线族对比" loading="lazy" />
-        <figcaption>图 3 · 运行态 (a) 与静置恢复后 (b) 虚拟极化曲线演化</figcaption>
+        <img src="assets/images/thesis/polar_evo.png" alt="300个关键循环点均匀抽样的虚拟极化曲线随运行时间逐步内收" loading="lazy" />
+        <figcaption>图 2 · 虚拟极化曲线随运行时间的演化（300 个关键循环点均匀抽样 10 条，颜色对应循环编号）</figcaption>
       </figure>
     </article>
 
@@ -232,7 +219,7 @@
       </div>
       <figure class="r-fig">
         <img src="assets/images/thesis/thesis_1.png" alt="综合健康指标CHI随运行时间单调下降曲线" loading="lazy" />
-        <figcaption>图 4 · 综合健康指标 CHI 在 1000 h 内的演化</figcaption>
+        <figcaption>图 3 · 综合健康指标 CHI 在 1000 h 内的演化</figcaption>
       </figure>
     </article>
 
@@ -258,6 +245,16 @@
           <div class="module"><b>④ 任务导向损失</b><span>MSE 叠加均值匹配正则项，抑制长预测窗口下的趋势漂移，提升物理一致性</span></div>
           <div class="module"><b>⑤ mHC 残差分支</b><span>多头对比叠加流形超连接，增强跨层信息复用、跨工况鲁棒性与训练稳定性</span></div>
         </div>
+        <div class="r-figpair">
+          <figure class="r-fig">
+            <img src="assets/images/thesis/model_arch.png" alt="SEH-Time-LLM 网络结构：冻结 LLM 骨干、语义原型生成器、多尺度对齐与 mHC" loading="lazy" />
+            <figcaption>图 4 · SEH-Time-LLM 网络结构（冻结 Qwen3-14B 骨干，语义原型 + 多尺度对齐 + mHC）</figcaption>
+          </figure>
+          <figure class="r-fig">
+            <img src="assets/images/thesis/metrics_bar.png" alt="各基线模型 MAE 与 RSE 指标柱状对比，SEH-Time-LLM 双指标最低" loading="lazy" />
+            <figcaption>图 5 · 与六类基线的 MAE / RSE 对比，SEH-Time-LLM（本文）双指标均为最优</figcaption>
+          </figure>
+        </div>
         <div class="result-strip">
           <div><span>MAE</span><b>0.0054</b></div>
           <div><span>RSE</span><b>0.6880</b></div>
@@ -269,22 +266,41 @@
       </div>
     </article>
 
-    <!-- 工作五：TrendAnchor 机理-数据融合 -->
-    <article class="r-block r-reverse reveal">
-      <div class="r-text">
+    <!-- 阶段五：TrendAnchor 机理-数据融合（纯结构化机制图，无位图） -->
+    <article class="r-block r-ta reveal">
+      <div class="r-text-full">
         <span class="r-tag r-tag-hl">阶段五 · 机理融合</span>
         <h4>TrendAnchor：面向机理-数据融合的多变量输入机制</h4>
-        <p>传统多变量输入将 CHI 视作普通特征列，其携带的退化先验会在层层自注意力中被「语义稀释」。为此将 CHI 由普通输入特征提升为<strong>「趋势方向锚点」</strong>，设计 TrendAnchor 双支路融合机制：</p>
-        <ul>
-          <li>构建 <strong>CER-CHI 多源对齐数据集</strong>：以循环编号为公共时间轴，对 300 个关键循环点的稀疏 CHI 线性插值至 CER 分辨率，共 3001 个样本，按 7:1:2 严格时序划分；</li>
-          <li><strong>双支路显式分工</strong>：CHI 与时间标记馈入 <strong>GRU 趋势支路</strong>输出趋势分量，CER / CHI 经 SEH-Time-LLM 输出残差分量，二者经<strong>波动率门控</strong>自适应融合 <code>CER_pred = trend + g(σ_CER)·(residual − trend)</code>——波动越大越倚重机理趋势、序列越平稳越倚重数据残差；</li>
-          <li>四组受控对照（S / MS-CHI / MS-lag / MS-shuffled，4 个随机种子）表明 <strong>MS-CHI &gt; S &gt; MS-shuffled ≈ MS-lag</strong>，排除「维度扩展」与「值域分布」两类混淆，证实 CHI 机理先验对长期预测的实质增益。</li>
-        </ul>
+        <p>传统多变量输入将 CHI 视作普通特征列，其携带的退化先验会在层层自注意力中被「语义稀释」。为此将 CHI 由普通输入特征提升为<strong>「趋势方向锚点」</strong>：先构建 <strong>CER-CHI 多源对齐数据集</strong>（以循环编号为公共时间轴，将 300 个关键循环点的稀疏 CHI 线性插值至 CER 分辨率，共 3001 个样本，按 7:1:2 严格时序划分），再以双支路显式分工、波动率门控自适应融合：</p>
+        <div class="ta-flow" aria-label="TrendAnchor 双支路融合机制示意">
+          <div class="ta-in">
+            <div class="ta-branch ta-trend">
+              <b>趋势支路 · GRU</b>
+              <span>输入：CHI + 时间标记</span>
+              <span>输出：趋势分量 <code>trend</code></span>
+              <i>锚定长期退化方向</i>
+            </div>
+            <div class="ta-branch ta-res">
+              <b>残差支路 · SEH-Time-LLM</b>
+              <span>输入：CER / CHI</span>
+              <span>输出：残差分量 <code>residual</code></span>
+              <i>刻画局部数据波动</i>
+            </div>
+          </div>
+          <span class="ta-arrow" aria-hidden="true">→</span>
+          <div class="ta-merge">
+            <b>波动率门控融合</b>
+            <code>CER_pred = trend + g(σ_CER)·(residual − trend)</code>
+            <span>σ 大 → g 小 → 更倚重机理趋势<br/>σ 小 → g 大 → 更倚重数据残差</span>
+          </div>
+          <span class="ta-arrow" aria-hidden="true">→</span>
+          <div class="ta-out">
+            <b>CER 长期预测序列</b>
+            <span>输出端仅保留 CER 通道</span>
+          </div>
+        </div>
+        <p class="ta-concl">四组受控对照（S / MS-CHI / MS-lag / MS-shuffled，各取 4 个随机种子）一致得到 <strong>MS-CHI &gt; S &gt; MS-shuffled ≈ MS-lag</strong>，排除「维度扩展」与「值域分布」两类混淆，证实 CHI 机理先验对长期预测的实质增益。</p>
       </div>
-      <figure class="r-fig">
-        <img src="assets/images/thesis/stage5.png" alt="TrendAnchor 趋势锚定与波动率门控融合机制" loading="lazy" />
-        <figcaption>图 5 · TrendAnchor 趋势锚定与波动率门控融合机制</figcaption>
-      </figure>
     </article>
   </section>
 
